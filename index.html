@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman's Den - Home</title>
+    <meta name="description"
+        content="Aman's Den is a web design and graphic design agency that offers a range of services to help businesses build their online presence. Contact us today to learn more.">
+    <meta name="keywords" content="web design, graphic design, website development, web development, digital marketing">
+    <!-- -------------------------------------------------------------------------------- Style Sheets And JavaScripts --------------------------------------------------------------------------------- -->
+    <!--? Include the Tailwind CSS | Style CSS-->
+    <link rel="stylesheet" type="text/css" href="/output.css"><!-- Here is the output file -->
+    <!--? ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- --------------------------------------------------------------------------------------------- -- ---------------------------------------------------------------------------------------------- -->
+</head>
+
+<body class="w-full light-theme" id="theme-change-section">
+    <!-- ------------------------------------------------------------------------------------------- Nav Bar ------------------------------------------------------------------------------------------- -->
+    <nav class="bg-gray-800 ">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <i class="text-5xl mb-4 fas fa-google-pay"></i>
+                    <a href="#" class="text-white text-2xl font-bold">Aman's Den</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center mt-3 space-x-4">
+                        <a href="#"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium ransition duration-150 ease-in-out">Home</a>
+                        <a href="#"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium ransition duration-150 ease-in-out">About</a>
+                        <a href="#" s
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium ransition duration-150 ease-in-out">Services</a>
+                        <a href="#"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium ransition duration-150 ease-in-out">Contact</a>
+                        <button id="toggle-theme" onclick="toggleTheme()"
+                            class="bg-blue-700 text-gray-100 border hover:bg-slate-800 hover:text-blue-700 hover:text-whitetransition duration-300 text-sm font-bold px-3 py-2 rounded">
+                            <span id="toggle-icon" class="text-white fas fa-moon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button id="switch-theme" aria-label="Switch to dark theme">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 472.39 472.39">
+                            <g class="toggle-sun">
+                                <path
+                                    d="M403.21,167V69.18H305.38L236.2,0,167,69.18H69.18V167L0,236.2l69.18,69.18v97.83H167l69.18,69.18,69.18-69.18h97.83V305.38l69.18-69.18Zm-167,198.17a129,129,0,1,1,129-129A129,129,0,0,1,236.2,365.19Z" />
+                            </g>
+                            <g class="toggle-circle">
+                                <circle class="cls-1" cx="236.2" cy="236.2" r="103.78" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 items-center">
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- ---------------------------------------------------------------------------------------- Hero Section ----------------------------------------------------------------------------------------- -->
+    <div class="grid select-none gap-4 bg-slate-800 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="group relative h-auto rounded-3xl transition ease-in hover:-translate-y-2 hover:bg-indigo-600">
+          <div class="text ease h-48 rounded-2xl bg-slate-300 text-center text-indigo-500 transition-colors delay-75 hover:bg-indigo-500 hover:text-white">
+            <h3 class="p-4 text-start text-2xl font-extrabold">Web Development</h3>
+            <p class="pl-4 pr-4 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati eligendi perspiciatis optio tenetur quidem sed sint iusto fuga esse.</p>
+          </div>
+          <div class="pointer-events-none absolute bottom-0 right-0 rounded-br-xl rounded-tl-xl bg-indigo-500 transition-colors delay-75 group-hover:bg-slate-300">
+            <a href="#" class="block h-full w-full text-slate-300 group-hover:text-indigo-500 sm:p-2 lg:p-4">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="group relative h-auto rounded-3xl transition ease-in hover:-translate-y-2 hover:bg-indigo-600">
+          <div class="text ease h-48 rounded-2xl bg-slate-300 text-center text-indigo-500 transition-colors delay-75 hover:bg-indigo-500 hover:text-white">
+            <h3 class="p-4 text-start text-2xl font-extrabold">Web Development</h3>
+            <p class="pl-4 pr-4 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati eligendi perspiciatis optio tenetur quidem sed sint iusto fuga esse.</p>
+          </div>
+          <div class="pointer-events-none absolute bottom-0 right-0 rounded-br-xl rounded-tl-xl bg-indigo-500 transition-colors delay-75 group-hover:bg-slate-300">
+            <a href="#" class="block h-full w-full text-slate-300 group-hover:text-indigo-500 sm:p-2 lg:p-4">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="group relative h-auto rounded-3xl transition ease-in hover:-translate-y-2 hover:bg-indigo-600">
+          <div class="text ease h-48 rounded-2xl bg-slate-300 text-center text-indigo-500 transition-colors delay-75 hover:bg-indigo-500 hover:text-white">
+            <h3 class="p-4 text-start text-2xl font-extrabold">Web Development</h3>
+            <p class="pl-4 pr-4 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati eligendi perspiciatis optio tenetur quidem sed sint iusto fuga esse.</p>
+          </div>
+          <div class="pointer-events-none absolute bottom-0 right-0 rounded-br-xl rounded-tl-xl bg-indigo-500 transition-colors delay-75 group-hover:bg-slate-300">
+            <a href="#" class="block h-full w-full text-slate-300 group-hover:text-indigo-500 sm:p-2 lg:p-4">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="group relative h-auto rounded-3xl transition ease-in hover:-translate-y-2 hover:bg-indigo-600">
+          <div class="text ease h-48 rounded-2xl bg-slate-300 text-center text-indigo-500 transition-colors delay-75 hover:bg-indigo-500 hover:text-white">
+            <h3 class="p-4 text-start text-2xl font-extrabold">Web Development</h3>
+            <p class="pl-4 pr-4 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati eligendi perspiciatis optio tenetur quidem sed sint iusto fuga esse.</p>
+          </div>
+          <div class="pointer-events-none absolute bottom-0 right-0 rounded-br-xl rounded-tl-xl bg-indigo-500 transition-colors delay-75 group-hover:bg-slate-300">
+            <a href="#" class="block h-full w-full text-slate-300 group-hover:text-indigo-500 sm:p-2 lg:p-4">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="group relative h-auto rounded-3xl transition ease-in hover:-translate-y-2 hover:bg-indigo-600">
+          <div class="text ease h-48 rounded-2xl bg-slate-300 text-center text-indigo-500 transition-colors delay-75 hover:bg-indigo-500 hover:text-white">
+            <h3 class="p-4 text-start text-2xl font-extrabold">Web Development</h3>
+            <p class="pl-4 pr-4 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati eligendi perspiciatis optio tenetur quidem sed sint iusto fuga esse.</p>
+          </div>
+          <div class="pointer-events-none absolute bottom-0 right-0 rounded-br-xl rounded-tl-xl bg-indigo-500 transition-colors delay-75 group-hover:bg-slate-300">
+            <a href="#" class="block h-full w-full text-slate-300 group-hover:text-indigo-500 sm:p-2 lg:p-4">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+        <div class="group relative h-auto rounded-3xl transition ease-in hover:-translate-y-2 hover:bg-indigo-600">
+          <div class="text ease h-48 rounded-2xl bg-slate-300 text-center text-indigo-500 transition-colors delay-75 hover:bg-indigo-500 hover:text-white">
+            <h3 class="p-4 text-start text-2xl font-extrabold">Web Development</h3>
+            <p class="pl-4 pr-4 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati eligendi perspiciatis optio tenetur quidem sed sint iusto fuga esse.</p>
+          </div>
+          <div class="pointer-events-none absolute bottom-0 right-0 rounded-br-xl rounded-tl-xl bg-indigo-500 transition-colors delay-75 group-hover:bg-slate-300">
+            <a href="#" class="block h-full w-full text-slate-300 group-hover:text-indigo-500 sm:p-2 lg:p-4">
+              <i class="fa fa-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <h3 class="text-cyan-500">HELLO THERE ITS THE TEST</h3>
+      
+
+    <!-- ----------------------------------------------------------------------------------------- Java Script ----------------------------------------------------------------------------------------- -->
+    <script>
+        const button = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        button.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+    <style>
+        #toggle-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .rotate12 {
+            transform: rotate(180deg);
+        }
+
+        body {
+            transition: dark 0.5s ease-in-out;
+        }
+    </style>
+    <script>s
+        // JavaScript code
+        function toggleTheme() {
+            const body = document.querySelector('body');
+            const toggleIcon = document.querySelector('#toggle-icon');
+            const toggleText = document.querySelector('#toggle-text');
+
+            body.classList.toggle('dark');
+
+            if (body.classList.contains('dark')) {
+                toggleIcon.classList.remove('fa-moon');
+                toggleIcon.classList.add('fa-sun');
+                toggleIcon.classList.add('rotate12');
+            } else {
+                toggleIcon.classList.remove('fa-sun');
+                toggleIcon.classList.add('fa-moon');
+                toggleIcon.classList.remove('rotate12');
+            }
+        }
+
+    </script>
+    <!-- Slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // Initialize the left swiper instance
+        var leftSwiper = new Swiper('.mySwiper', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 0, // set spaceBetween to 0
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                }
+            },
+        });
+
+        // Initialize the right swiper instance
+        var rightSwiper = new Swiper('.mySwiper2', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 0, // set spaceBetween to 0
+            navigation: {
+                nextEl: '.swiper-button-next-2',
+                prevEl: '.swiper-button-prev-2',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                }
+            },
+        });
+    </script>
+    <!-- ------------------------------------------------------------------------------------------- Footer -------------------------------------------------------------------------------------------- -->
+    <footer class="bg-gray-800 py-20">
+        <div class="container mx-auto px-4">
+            <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-12">
+                <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+                    <h5 class="text-xl font-bold mb-6 text-gray-300">Features</h5>
+                    <ul class="list-none footer-links">
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Cool
+                                stuff</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Random
+                                feature</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Team
+                                feature</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Stuff
+                                for developers</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Another
+                                one</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Last
+                                time</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+                    <h5 class="text-xl font-bold mb-6 text-gray-300">Resources</h5>
+                    <ul class=" list-none footer-links">
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Resource</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Resource
+                                name</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Another
+                                resource</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Final
+                                resource</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+                    <h5 class="text-xl font-bold mb-6 text-gray-300">About</h5>
+                    <ul class="list-none footer-links">
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Team</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Locations</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Privacy</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+                    <h5 class="text-xl font-bold mb-6 text-gray-300">Help</h5>
+                    <ul class="list-none footer-links">
+                        <li class="mb-2">
+                            <a href="#"
+                                class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Support</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Help
+                                Center</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="border-b border-gray-600 pb-1 text-gray-400 hover:text-gray-200">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+                    <h5 class="text-xl font-bold mb-6 text-gray-300">Subscribe</h5>
+                    <p class="mb-6 text-gray-400">Get the latest news and articles delivered straight to your inbox.</p>
+                    <form action="#">
+                        <div class="mb-3 sm:flex">
+                            <input type="email"
+                                class="px-4 py-2 bg-gray-900 text-gray-100 border border-gray-800 rounded-lg mb-2 sm:mb-0 sm:mr-2 focus:border-indigo-500 focus:outline-none"
+                                placeholder="Enter your email address">
+                            <button
+                                class="px-4 py-2 bg-indigo-500 text-gray-100 border border-indigo-500 rounded-lg hover:bg-gray-900 hover:text-white">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4">
+            <div class="border-t border-gray-800 pt-8 pb-8 sm:flex sm:justify-between">
+                <p class="text-gray-400 text-sm mb-6 sm:mb-0">© 2023 Your Company. All Rights Reserved.</p>
+                <div class="text-gray-400 text-sm">
+                    <a href="#" class="hover:text-gray-200 mr-4">Terms</a>
+                    <a href="#" class="hover:text-gray-200">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
